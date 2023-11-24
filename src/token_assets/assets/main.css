@@ -1,37 +1,169 @@
-body {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-}
+html {
+    font-family: System, monospace;
+    font-size: 20pt;
+  }
+  
+  
+    body{
+      margin:0;
+      padding:0;
+      font-family:sans-serif;
+      font-size:15px;
+        background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+      -webkit-animation: 10s linear 0s normal none infinite animate;
+      -moz-animation: 10s linear 0s normal none infinite animate;
+      -ms-animation: 10s linear 0s normal none infinite animate;
+      -o-animation: 10s linear 0s normal none infinite animate;
+      animation: 10s linear 0s normal none infinite animate;
+     
+    }
+     
+    @-webkit-keyframes animate {
+      from {background-position:0 0;}
+      to {background-position: 500px 0;}
+    }
+     
+    @-moz-keyframes animate {
+      from {background-position:0 0;}
+      to {background-position: 500px 0;}
+    }
+     
+    @-ms-keyframes animate {
+      from {background-position:0 0;}
+      to {background-position: 500px 0;}
+    }
+     
+    @-o-keyframes animate {
+      from {background-position:0 0;}
+      to {background-position: 500px 0;}
+    }
+     
+    @keyframes animate {
+      from {background-position:0 0;}
+      to {background-position: 500px 0;}
+    }
+  
+  
+  span:after {
+    content: " ";
+    display: inline-block;
+    width: 2%;
+  }
+  
+  fieldset {
+    float: left;
+    padding-right: 18px;
+  }
+  
+  #logo {
+    font-family: "Times";
+    font-size: 20pt;
+  }
 
-img {
-    max-width: 50vw;
-    max-height: 25vw;
-    display: block;
+  .box {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background: #5d8aa8;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .window {
+    position: relative;
+    cursor: default;
+    margin: 2em auto;
+    width: 80%;
+    background: #7393B3;
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
+    max-width: 640px;
+  }
+  
+  .window.white {
+    background: 	#8cbed6;
+    color: black;
+    border-color: white;
+  }
+  
+  .window.half-width {
+    width: 50%;
+  }
+  
+  .window h1 {
+    text-align: center;
+  }
+  
+  .window.blue p {
+    color: white;
+    text-shadow: 0 0 2px white;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button {
+    display: inline-block;
+    color: white;
+    background: rgb(0, 79, 128);
+    position: relative;
+    border-radius: 5px;
+    width:200px;
+  }
+  
+  button:hover{
+    background: rgb(10, 42, 56);
+  }
+ 
+  button:disabled {
+    background: gray;
+  }
+  
+  button#btn-transfer {
+    margin-top: 20px;
+  }
+  
+  input,
+  textarea {
+    /* background: rgb(113, 113, 132); */
+    color: rgb(8, 0, 0);
+    width: 100%;
+    max-width: 100%;
+    font-size: 12pt;
+  }
+  input:disabled {
+    background: #505070;
+    color: #d0d0d0;
+  }
+  
+  .window > textarea {
+    width: 100%;
+    border: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .trade-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  div .transfer {
+    display: table;
     margin: auto;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-    flex-flow: row wrap;
-    max-width: 40vw;
-    margin: auto;
-    align-items: baseline;
-}
-
-button[type="submit"] {
-    padding: 5px 20px;
-    margin: 10px auto;
-    float: right;
-}
-
-#greeting {
-    margin: 10px auto;
-    padding: 10px 60px;
-    border: 1px solid #222;
-}
-
-#greeting:empty {
-    display: none;
-}
+  }
+  
