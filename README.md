@@ -1,4 +1,4 @@
-# Tokens_Blockchain
+# Tokens (ICP) (Blockchain)
 A website where we can create a custom token and give users ability to claim some free tokens and the ability to transfer tokens to other users. (React.js,Node.js,Motoko,Web 3.0,Blockchain)
 This project uses motoko as a backend and interface it with our react front end. 
 
