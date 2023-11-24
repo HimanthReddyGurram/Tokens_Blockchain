@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Principal } from '@dfinity/principal';
 import { token } from "../../../declarations/token";
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
 function Balance() {
 
@@ -20,14 +21,14 @@ function Balance() {
 
   return (
     <div className="window white">
-      <label><h1>Check account token balance:</h1></label>
+      <label><h1><AccountBalanceWalletIcon /> Check account token balance:</h1></label>
       <p>
         <input
           id="balance-principal-id"
           type="text"
           placeholder="Enter a Principal ID"
           value={inputValue}
-          onChange={(e) => setInput(e.target.value)}
+          onChange={(e) => {setHidden(true);setInput(e.target.value)}}
         />
       </p>
       <h1 className="trade-buttons">
