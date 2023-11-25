@@ -112,7 +112,7 @@ Which will start a server at `http://localhost:8080`, proxying API requests to t
 ## User Interface
 * We can see that when we click on get free tokens we get 1000 Heddy tokens.
 * We can check balance of multiple users in the balance section.
-  - Please use principal values for user id (you have your token principal id, local priniciple id "2vxsx-fae" and other principal id's)
+  - Please use principal values for user id/account number. (you have your token principal id, local priniciple id (user interface) "2vxsx-fae" and your principal id.)
 * We can even transfer tokens from one account to another.
 
 ### Note on frontend environment variables
